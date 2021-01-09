@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const IndexPage = () => {
-  return <Container>Next JS Template</Container>
+  return <Container>Happy CNY from Santavana!</Container>
 }
 
 const Container = styled.div`
@@ -10,6 +10,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
+  color: white;
+  font-size: 50px;
 `
 
 export default IndexPage
