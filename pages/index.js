@@ -2,7 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 const IndexPage = () => {
-  return <Container>Happy CNY from Santavana!</Container>
+  return (
+    <Container>
+      Happy CNY from Santavana!
+      <img src="/favicon.ico" alt="logo" />
+    </Container>
+  )
 }
 
 const Container = styled.div`
