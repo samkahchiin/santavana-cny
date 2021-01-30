@@ -3,21 +3,19 @@ import styled from 'styled-components'
 
 const IndexPage = () => {
   return (
-    <Container>
-      Happy CNY from Santavana!
-      <img src="/favicon.ico" alt="logo" />
-    </Container>
+    <Container style={{backgroundImage: `url('./web.jpeg')`}} />
   )
 }
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  color: white;
   font-size: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 `
 
 export default IndexPage
