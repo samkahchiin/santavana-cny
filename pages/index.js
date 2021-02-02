@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const IndexPage = () => {
   return (
-    <Container style={{backgroundImage: `url('./web.jpeg')`}} />
+    <Container style={{backgroundImage: `url('./background.png')`}} />
   )
 }
 
