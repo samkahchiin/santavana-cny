@@ -13,7 +13,27 @@ const IndexPage = () => {
           margin: '40px',
         }}
       />
-      <img src="/buddha-static.png" style={{ width: 'auto', height: '60vh' }} />
+      <div style={{ position: 'relative', display: 'inline-block' }}>
+        <img
+          src="/buddha-static.png"
+          style={{ width: 'auto', height: '60vh', display: 'block' }}
+        />
+        <button
+          style={{
+            position: 'absolute',
+            margin: '0 auto',
+            bottom: '5%',
+            left: 0,
+            right: 0,
+            width: '30%',
+            fontSize: '20px',
+            borderRadius: '15px',
+            cursor: 'pointer',
+          }}
+        >
+          开始 Start
+        </button>
+      </div>
     </Container>
   )
 }
