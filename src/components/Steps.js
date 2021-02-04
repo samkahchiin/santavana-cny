@@ -75,13 +75,7 @@ const StepOne = ({ setLanguage, setStep }) => {
         >
           選擇語言 Select a language
         </p>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            fontFamily: 'chinese',
-          }}
-        >
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Button
             btnText="中文"
             btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
@@ -92,7 +86,7 @@ const StepOne = ({ setLanguage, setStep }) => {
           />
           <Button
             btnText="English"
-            btnStyle={{ margin: '10px auto', flexGrow: 0.3, fontFamily: 'din' }}
+            btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
             onClick={() => {
               setStep(2)
               setLanguage('en')
@@ -111,14 +105,12 @@ const StepTwo = ({ language, setStep }) => {
         ...containerStyle,
         backgroundImage: `url('./background_1.png')`,
         justifyContent: 'flex-end',
-        fontFamily: 'en-bold',
-        fontStyle: 'bold',
       }}
     >
       <div
         style={{
-          marginBottom: '20pt',
-          maxWidth: '170pt',
+          marginBottom: '10pt',
+          maxWidth: '20%',
           fontSize: '14pt',
           borderRadius: '10pt',
           border: `solid 2.5pt ${PRIMARY_COLOR}`,
@@ -128,11 +120,17 @@ const StepTwo = ({ language, setStep }) => {
           justifyContent: 'center',
           flexDirection: 'column',
           padding: '5pt',
+          color: TERTIARY_COLOR,
+          textAlign: 'center',
         }}
       >
-        <p style={{ color: TERTIARY_COLOR, textAlign: 'center' }}>
-          {yaml[language].praying}
-        </p>
+        <span>{yaml[language].praying}</span>
+        <br />
+        <span style={{ fontWeight: 'bold' }}>
+          {yaml[language].praying_charm}
+        </span>
+        <br />
+        <span>{yaml[language].praying_advise}</span>
         <Button btnText={yaml[language].next} onClick={() => setStep(3)} />
       </div>
     </div>
