@@ -109,7 +109,7 @@ const StepTwo = ({ language, setStep }) => {
       <div
         style={{
           marginBottom: '10pt',
-          maxWidth: '20%',
+          maxWidth: '150pt',
           fontSize: '14pt',
           borderRadius: '10pt',
           border: `solid 2.5pt ${PRIMARY_COLOR}`,
