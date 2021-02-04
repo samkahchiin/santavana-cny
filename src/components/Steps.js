@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Button from './shared/Button'
 import yaml from '../data/text.yml'
+import quotes from '../data/quotes.data'
 
 const PRIMARY_COLOR = '#E0A91A'
 const SECONDARY_COLOR = '#FFF6E0'
@@ -138,6 +139,7 @@ const StepThree = ({ language, setStep }) => {
           width: '200px',
           height: '200px',
           marginBottom: '10pt',
+          cursor: 'pointer',
         }}
         onClick={() => setStep(4)}
       />
@@ -193,6 +195,9 @@ const StepFour = ({ language, setStep }) => {
 }
 
 const StepFive = ({ language, setStep }) => {
+  const quoteList = quotes[language]
+  const selectedId = Math.floor(Math.random() * 22) + 1
+
   return (
     <div
       className="container"
@@ -211,16 +216,36 @@ const StepFive = ({ language, setStep }) => {
           position: 'relative',
         }}
       />
-      <Button
-        btnText={yaml[language].homepage}
-        btnStyle={{ position: 'absolute', bottom: '60pt' }}
-        onClick={() => setStep(5)}
-      />
-      <Button
-        btnText={yaml[language].replay}
-        btnStyle={{ position: 'absolute', bottom: '60pt' }}
-        onClick={() => setStep(5)}
-      />
+
+      <div
+        style={{
+          display: 'flex',
+          position: 'absolute',
+          top: '150pt',
+          flexDirection: 'column',
+          maxWidth: '130pt',
+        }}
+      >
+        <p>{quoteList[selectedId].text}</p>
+        <p>{quoteList[selectedId].author}</p>
+        <p>{quoteList[selectedId].book}</p>
+      </div>
+      <div style={{ display: 'flex', position: 'absolute', bottom: '60pt' }}>
+        <button
+          style={{
+            padding: '5pt',
+            fontSize: '14pt',
+            borderRadius: '15pt',
+            cursor: 'pointer',
+            border: `solid 1.5pt ${SECONDARY_COLOR}`,
+            backgroundColor: PRIMARY_COLOR,
+            color: SECONDARY_COLOR,
+          }}
+        >
+          <a href="https://santavana.org/">{yaml[language].homepage}</a>
+        </button>
+        <Button btnText={yaml[language].replay} onClick={() => setStep(0)} />
+      </div>
     </div>
   )
 }
@@ -245,8 +270,10 @@ const Steps = () => {
     return <StepFour language={language} setStep={setStep} />
   }
 
-  //   return <StepZero clickStart={() => setStep(1)} />
-  return <StepFive language={language} setStep={setStep} />
+  if (step === 5) {
+    return <StepFive language={language} setStep={setStep} />
+  }
+  return <StepZero clickStart={() => setStep(1)} />
 }
 
 export default Steps
