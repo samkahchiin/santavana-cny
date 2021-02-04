@@ -156,56 +156,56 @@ const quotes = {
       id: 1,
       text:
         "A person's viewpoint can affect many things, hence Buddhism teaches us to think rationally and to observe dependent origination.",
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 2,
       text:
         "We don't have to take things too perfectly, just do the things according to the condition that we have. Successful arises when we act according to one's capability.",
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 3,
       text:
         'The world is relative. If we can explain our position and opinions calmly, we shouldn’t use harsh and uncomfortable words to express them.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 4,
       text:
         'Practicing the Dhamma is neither empty talk, nor absurd argument, it’s not a necessities for livelihood, but an essential that nourishing our mind and body.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 5,
       text:
         'Only when there is an ordeal can we see clearly our endurance in dealing with problems. Once the mind accepts the changes, our mind and body will settle down naturally.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 6,
       text:
         'Accepting changes is the authentic feature of impermanence and non-self.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 7,
       text:
         'Wishing all beings be free from suffering with kindness, try our best to resolve interpersonal disputes and selfishness, let the world soon be recover and be peace!',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 9,
       text:
         'It is our own choice to become a wise or a fool. Are we usually bring trouble on oneself easily, and relocate those problems to people around us?',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
 
@@ -213,21 +213,21 @@ const quotes = {
       id: 10,
       text:
         'Reflect on the nature of Buddha-Dhamma, we have to see and to experience by oneself, to affirm that there is no mistake in what we have learned.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 11,
       text:
         'Once there have the craving, it becomes very difficult to see the faults and distress of five aggregates.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 12,
       text:
         'The quality and effect of blessings depend on our purity in the precepts and meritorious behavior.',
-      author: 'Thera Kair',
+      author: 'Thera Kairen',
       book: 'The Abbot of Santavana Forest Hermitage',
     },
     {

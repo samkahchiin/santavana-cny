@@ -234,14 +234,16 @@ const StepFive = ({ language, setStep }) => {
         style={{
           display: 'flex',
           position: 'absolute',
-          top: '150pt',
+          top: '35%',
           flexDirection: 'column',
           maxWidth: '130pt',
         }}
       >
-        <p>{quoteList[selectedId].text}</p>
-        <p>{quoteList[selectedId].author}</p>
-        <p>{quoteList[selectedId].book}</p>
+        <span>{quoteList[selectedId].text}</span>
+        <br />
+        <span>{quoteList[selectedId].author}</span>
+        <br />
+        <span>{quoteList[selectedId].book}</span>
       </div>
       <div style={{ display: 'flex', position: 'absolute', bottom: '60pt' }}>
         <button
