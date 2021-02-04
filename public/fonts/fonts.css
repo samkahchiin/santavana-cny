@@ -1,23 +1,27 @@
 @font-face {
   font-family: 'ch';
-  font-style: bold;
-  src: local('ch'), url(/fonts/ch-bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/ch-medium.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'ch';
+  font-weight: bold;
   font-style: normal;
-  src: local('ch'), url(/fonts/ch-medium.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'en-bold';
-  font-style: bold;
-  src: local('en-bold'), url(/fonts/en-bold.otf) format('opentype');
+  src: url(/fonts/ch-bold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'en';
+  font-weight: bold;
   font-style: normal;
-  src: local('en'), url(/fonts/en-bold.otf) format('opentype');
+  src: url(/fonts/en-bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'en';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/en-medium.otf) format('opentype');
 }

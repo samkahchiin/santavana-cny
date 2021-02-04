@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import './Steps.module.css'
 import Button from './shared/Button'
 import yaml from '../data/text.yml'
 import quotes from '../data/quotes.data'
@@ -70,15 +69,15 @@ const StepOne = ({ setLanguage, setStep }) => {
           style={{
             color: TERTIARY_COLOR,
             textAlign: 'center',
-            fontFamily: 'din',
           }}
         >
-          選擇語言 Select a language
+          <span>選擇語言</span>
+          <span style={{ fontFamily: 'en' }}> Select a language</span>
         </p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Button
             btnText="中文"
-            btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
+            btnStyle={{ margin: '10px auto', flexGrow: 0.3, fontFamily: 'ch' }}
             onClick={() => {
               setStep(2)
               setLanguage('ch')
@@ -86,7 +85,7 @@ const StepOne = ({ setLanguage, setStep }) => {
           />
           <Button
             btnText="English"
-            btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
+            btnStyle={{ margin: '10px auto', flexGrow: 0.3, fontFamily: 'en' }}
             onClick={() => {
               setStep(2)
               setLanguage('en')
@@ -236,12 +235,13 @@ const StepFive = ({ language, setStep }) => {
           position: 'absolute',
           top: '35%',
           flexDirection: 'column',
-          maxWidth: '130pt',
+          maxWidth: '150pt',
+          textAlign: 'center',
         }}
       >
-        <span>{quoteList[selectedId].text}</span>
+        <span style={{ fontWeight: 'bold' }}>{quoteList[selectedId].text}</span>
         <br />
-        <span>{quoteList[selectedId].author}</span>
+        <span> — {quoteList[selectedId].author} — </span>
         <br />
         <span>{quoteList[selectedId].book}</span>
       </div>
@@ -266,36 +266,43 @@ const StepFive = ({ language, setStep }) => {
             {yaml[language].homepage}
           </a>
         </button>
-        <Button btnText={yaml[language].replay} onClick={() => setStep(0)} />
+        <Button btnText={yaml[language].replay} onClick={() => setStep(3)} />
       </div>
     </div>
   )
+}
+
+const StepComponent = ({ step, setLanguage, setStep, language }) => {
+  switch (step) {
+    case 1:
+      return <StepOne setLanguage={setLanguage} setStep={setStep} />
+    case 2:
+      return <StepTwo language={language} setStep={setStep} />
+    case 3:
+      return <StepThree language={language} setStep={setStep} />
+    case 4:
+      return <StepFour language={language} setStep={setStep} />
+    case 5:
+      return <StepFive language={language} setStep={setStep} />
+    default:
+      return <StepZero clickStart={() => setStep(1)} />
+  }
 }
 
 const Steps = () => {
   const [step, setStep] = useState(0)
   const [language, setLanguage] = useState('ch')
 
-  if (step === 1) {
-    return <StepOne setLanguage={setLanguage} setStep={setStep} />
-  }
-
-  if (step === 2) {
-    return <StepTwo language={language} setStep={setStep} />
-  }
-
-  if (step === 3) {
-    return <StepThree language={language} setStep={setStep} />
-  }
-
-  if (step === 4) {
-    return <StepFour language={language} setStep={setStep} />
-  }
-
-  if (step === 5) {
-    return <StepFive language={language} setStep={setStep} />
-  }
-  return <StepZero clickStart={() => setStep(1)} />
+  return (
+    <div style={{ fontFamily: language }}>
+      <StepComponent
+        step={step}
+        setStep={setStep}
+        setLanguage={setLanguage}
+        language={language}
+      />
+    </div>
+  )
 }
 
 export default Steps
