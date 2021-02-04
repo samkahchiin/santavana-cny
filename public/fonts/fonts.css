@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'ch';
+  font-style: bold;
+  src: local('ch'), url(/fonts/ch-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ch';
+  font-style: normal;
+  src: local('ch'), url(/fonts/ch-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'en-bold';
+  font-style: bold;
+  src: local('en-bold'), url(/fonts/en-bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'en';
+  font-style: normal;
+  src: local('en'), url(/fonts/en-bold.otf) format('opentype');
+}
