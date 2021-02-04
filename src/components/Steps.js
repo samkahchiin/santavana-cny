@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import './Steps.module.css'
 import Button from './shared/Button'
 import yaml from '../data/text.yml'
 import quotes from '../data/quotes.data'
@@ -65,10 +66,22 @@ const StepOne = ({ setLanguage, setStep }) => {
           padding: '5pt',
         }}
       >
-        <p style={{ color: TERTIARY_COLOR, textAlign: 'center' }}>
+        <p
+          style={{
+            color: TERTIARY_COLOR,
+            textAlign: 'center',
+            fontFamily: 'din',
+          }}
+        >
           選擇語言 Select a language
         </p>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            fontFamily: 'chinese',
+          }}
+        >
           <Button
             btnText="中文"
             btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
@@ -79,7 +92,7 @@ const StepOne = ({ setLanguage, setStep }) => {
           />
           <Button
             btnText="English"
-            btnStyle={{ margin: '10px auto', flexGrow: 0.3 }}
+            btnStyle={{ margin: '10px auto', flexGrow: 0.3, fontFamily: 'din' }}
             onClick={() => {
               setStep(2)
               setLanguage('en')
@@ -98,6 +111,8 @@ const StepTwo = ({ language, setStep }) => {
         ...containerStyle,
         backgroundImage: `url('./background_1.png')`,
         justifyContent: 'flex-end',
+        fontFamily: 'en-bold',
+        fontStyle: 'bold',
       }}
     >
       <div
