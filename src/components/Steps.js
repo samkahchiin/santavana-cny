@@ -36,7 +36,7 @@ const StepZero = ({ clickStart }) => (
         margin: '40px',
       }}
     />
-    <div style={{ marginBottom: '20pt' }}>
+    <div style={{ marginBottom: '20pt', cursor: 'pointer' }}>
       <Button btnText="开始 Start" onClick={clickStart} />
     </div>
   </div>
