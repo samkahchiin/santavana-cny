@@ -252,10 +252,17 @@ const StepFive = ({ language, setStep }) => {
             cursor: 'pointer',
             border: `solid 1.5pt ${SECONDARY_COLOR}`,
             backgroundColor: PRIMARY_COLOR,
-            color: SECONDARY_COLOR,
           }}
         >
-          <a href="https://santavana.org/">{yaml[language].homepage}</a>
+          <a
+            href="https://santavana.org/"
+            style={{
+              textDecoration: 'none',
+              color: SECONDARY_COLOR,
+            }}
+          >
+            {yaml[language].homepage}
+          </a>
         </button>
         <Button btnText={yaml[language].replay} onClick={() => setStep(0)} />
       </div>
