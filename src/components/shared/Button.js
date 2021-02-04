@@ -1,25 +1,24 @@
-const Button = ({ btnText, btnStyle = {} }) => {
-  return (
-    <button
-      style={{
-        ...btnStyle,
-        position: 'absolute',
-        margin: '0 auto',
-        bottom: '5%',
-        left: 0,
-        right: 0,
-        width: '30%',
-        fontSize: '14pt',
-        borderRadius: '10pt',
-        cursor: 'pointer',
-        border: 'solid 1.5px #E0A91A',
-        backgroundColor: '#E0A91A',
-        color: '#FFF6E0',
-      }}
-    >
-      {btnText}
-    </button>
-  )
-}
+const PRIMARY_COLOR = '#E0A91A'
+const SECONDARY_COLOR = '#FFF6E0'
+const TERTIARY_COLOR = '#695237'
+
+const Button = ({ btnText, btnStyle = {}, onClick }) => (
+  <button
+    onClick={onClick}
+    style={{
+      ...btnStyle,
+
+      padding: '5pt',
+      fontSize: '14pt',
+      borderRadius: '15pt',
+      cursor: 'pointer',
+      border: `solid 1.5pt ${SECONDARY_COLOR}`,
+      backgroundColor: PRIMARY_COLOR,
+      color: SECONDARY_COLOR,
+    }}
+  >
+    {btnText}
+  </button>
+)
 
 export default Button
