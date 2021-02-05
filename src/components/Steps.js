@@ -244,9 +244,8 @@ const StepFive = ({ language, setStep }) => {
       >
         <span style={{ fontWeight: 'bold' }}>{quoteList[selectedId].text}</span>
         <br />
-        <span> — {quoteList[selectedId].author} — </span>
-        <br />
-        <span>{quoteList[selectedId].book}</span>
+        <span>{quoteList[selectedId].ref_1}</span>
+        <span>{quoteList[selectedId].ref_2}</span>
       </div>
       <div style={{ display: 'flex', position: 'absolute', bottom: '13vh' }}>
         <button
