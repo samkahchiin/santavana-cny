@@ -24,14 +24,23 @@
   .Angpau {
     bottom: 15vh;
   }
+
+  .QuoteContent {
+    max-width: 20vw;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .Angpau {
     bottom: 13vh;
   }
+
   .Quote {
     max-height: 35vh;
+  }
+
+  .QuoteContent {
+    max-width: 18vw;
   }
 }
 
@@ -42,6 +51,10 @@
 
   .Quote {
     max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
   }
 }
 
@@ -210,7 +223,6 @@
   position: absolute;
   top: 35vh;
   flex-direction: column;
-  max-width: 150pt;
   text-align: center;
   z-index: 100;
 }

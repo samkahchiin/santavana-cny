@@ -19,7 +19,13 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'ch';
-    overflow-y: hidden;
+  }
+
+  @media screen and (max-width: 480px) {
+      body {
+        max-height: 100vh;
+        overflow-y: hidden;
+      }
   }
 `
 

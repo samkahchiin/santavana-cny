@@ -129,7 +129,7 @@ const StepFour = ({ language, setStep }) => {
 
 const StepFive = ({ language, setStep }) => {
   const quoteList = quotes[language]
-  const selectedId = Math.floor(Math.random() * 23)
+  const selectedId = Math.floor(Math.random() * 22)
 
   return (
     <div

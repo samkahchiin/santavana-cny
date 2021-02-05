@@ -24,8 +24,7 @@
 .Button:hover {
   --border-color: #e0a91a;
   --background-color: #fff6e0;
-  --text-color: #695237;
   border: 'solid 1.5pt var(--border-color)';
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: #695237;
 }
