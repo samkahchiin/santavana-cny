@@ -6,6 +6,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <title>Santavana | 寂静禅林</title>
         <link rel="stylesheet" href="fonts/fonts.css" />
       </Head>
       <GlobalStyles />
