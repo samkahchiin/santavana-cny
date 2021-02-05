@@ -157,7 +157,7 @@ const StepFive = ({ language, setStep }) => {
             btnText={yaml[language].homepage}
             redirectLink="https://santavana.org/"
           />
-          <Button btnText={yaml[language].replay} onClick={() => setStep(3)} />
+          <Button btnText={yaml[language].replay} onClick={() => setStep(0)} />
         </div>
       </div>
     </div>
