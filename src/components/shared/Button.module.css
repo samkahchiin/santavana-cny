@@ -12,7 +12,7 @@
   background-color: var(--background-color);
   color: var(--text-color);
 
-  z-index: 2;
+  z-index: 20;
 }
 
 .Button:hover {

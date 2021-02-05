@@ -5,11 +5,15 @@
 }
 
 .Angpau {
-  position: absolute;
-  max-width: 80pt;
+  /* position: absolute; */
+  /* max-width: 80pt; */
+
   left: 0;
   right: 0;
   margin: auto;
+  width: auto;
+
+  position: fixed;
 }
 
 .Quote {
@@ -24,7 +28,7 @@
 
 @media only screen and (min-width: 768px) {
   .Angpau {
-    bottom: 16vh;
+    bottom: 13vh;
   }
   .Quote {
     max-height: 35vh;
@@ -71,6 +75,33 @@
   position: relative;
 }
 
+.AngpauPacket:before {
+  content: '';
+  background-image: url('/angpow.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: 1;
+  height: 90vh;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.AngpauPacket {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .Background:before {
   content: '';
   background-image: url('/background.png');
@@ -114,11 +145,11 @@
 
   z-index: 0;
   height: 70vh;
-  width: 'auto';
+  width: auto;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 'auto';
+  margin: auto;
 
   background-size: contain;
   background-position: center;
@@ -134,11 +165,11 @@
 
   z-index: 0;
   height: 70vh;
-  width: 'auto';
+  width: auto;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 'auto';
+  margin: auto;
 
   background-size: contain;
   background-position: center;
@@ -154,11 +185,11 @@
 
   z-index: 0;
   height: 70vh;
-  width: 'auto';
+  width: auto;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 'auto';
+  margin: auto;
 
   background-size: contain;
   background-position: center;
@@ -181,4 +212,5 @@
   flex-direction: column;
   max-width: 150pt;
   text-align: center;
+  z-index: 100;
 }
