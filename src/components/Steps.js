@@ -131,6 +131,8 @@ const StepFive = ({ language, setStep }) => {
   const quoteList = quotes[language]
   const selectedId = Math.floor(Math.random() * 22) + 1
 
+  console.log(quoteList, selectedId)
+
   return (
     <div
       className={classes.Blur}
