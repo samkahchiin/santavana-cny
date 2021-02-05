@@ -187,7 +187,10 @@ const Steps = () => {
   const [language, setLanguage] = useState('ch')
 
   return (
-    <div className={classes.Background} style={{ fontFamily: language }}>
+    <div
+      className={step === 0 ? classes.Background : classes.BackgroundHigh}
+      style={{ fontFamily: language }}
+    >
       <StepComponent
         step={step}
         setStep={setStep}
