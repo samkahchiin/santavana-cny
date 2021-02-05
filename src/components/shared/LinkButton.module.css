@@ -1,3 +1,9 @@
+.LinkButton a {
+  --text-color: #fff6e0;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .Button {
   --background-color: #e0a91a;
   --border-color: #fff6e0;
