@@ -1,0 +1,23 @@
+.Button {
+  --background-color: #e0a91a;
+  --border-color: #fff6e0;
+  --text-color: #fff6e0;
+  padding: 5pt;
+  font-size: 14pt;
+  border-radius: 15pt;
+  cursor: pointer;
+  border-width: 1.5pt;
+  border-style: solid;
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.Button:hover {
+  --border-color: #e0a91a;
+  --background-color: #fff6e0;
+  --text-color: #695237;
+  border: 'solid 1.5pt var(--border-color)';
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
