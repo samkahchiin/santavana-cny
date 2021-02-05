@@ -256,6 +256,7 @@ const StepFive = ({ language, setStep }) => {
           <br />
           <br />
           <span>{quoteList[selectedId].ref_1}</span>
+          <br />
           <span>{quoteList[selectedId].ref_2}</span>
         </div>
         <div style={{ marginTop: '5vh' }}>
