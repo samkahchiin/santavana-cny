@@ -9771,11 +9771,6 @@ react-syntax-highlighter@^11.0.2:
     prismjs "^1.8.4"
     refractor "^2.4.1"
 
-react-tappable@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/react-tappable/-/react-tappable-1.0.4.tgz"
-  integrity sha512-thWt8b11Hy1BmWDPuqbj+Qom5MmnMZDjfzgSE2L2Yh0Hoc9+I6DKNmWrOJGaZtH6fL4FWtRk4HwyMfUJ10M67g==
-
 react-textarea-autosize@^7.1.0:
   version "7.1.2"
   resolved "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-7.1.2.tgz"
