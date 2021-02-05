@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Button from './shared/Button'
 import yaml from '../data/text.yml'
 import quotes from '../data/quotes.data'
+import classes from './Steps.module.css'
 
 const PRIMARY_COLOR = '#E0A91A'
 const SECONDARY_COLOR = '#FFF6E0'
@@ -203,11 +204,11 @@ const StepFour = ({ language, setStep }) => {
         btnText={yaml[language].open}
         btnStyle={{
           position: 'absolute',
-          bottom: '13vh',
           left: 0,
           right: 0,
           margin: '0 auto',
         }}
+        className={[classes.Angpau]}
         onClick={() => setStep(5)}
       />
     </div>

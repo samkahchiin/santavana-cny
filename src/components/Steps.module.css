@@ -1,0 +1,9 @@
+.Angpau {
+  bottom: 5vh;
+}
+
+@media (min-width: 500px) and (min-height: 700px) {
+  .Angpau {
+    bottom: 13vh;
+  }
+}
