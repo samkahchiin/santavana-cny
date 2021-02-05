@@ -249,7 +249,7 @@ const StepFive = ({ language, setStep }) => {
           textAlign: 'center',
         }}
       >
-        <div style={{ maxHeight: '50%', overflowY: 'scroll' }}>
+        <div className={classes.Quote} style={{ overflowY: 'scroll' }}>
           <span style={{ fontWeight: 'bold' }}>
             {quoteList[selectedId].text}
           </span>

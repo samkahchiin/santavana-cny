@@ -8,10 +8,17 @@
   .Angpau {
     bottom: 13vh;
   }
+  .Quote {
+    max-height: 35vh;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .Angpau {
-    bottom: 3vh;
+    bottom: 0;
+  }
+
+  .Quote {
+    max-height: 30vh;
   }
 }
