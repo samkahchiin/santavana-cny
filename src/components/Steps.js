@@ -32,11 +32,11 @@ const StepZero = ({ clickStart }) => (
       src="/title.png"
       style={{
         width: 'auto',
-        height: '25vh',
+        height: '23vh',
         margin: '40px',
       }}
     />
-    <div style={{ marginBottom: '20pt', cursor: 'pointer' }}>
+    <div style={{ marginBottom: '2vh', cursor: 'pointer' }}>
       <Button btnText="开始 Start" onClick={clickStart} />
     </div>
   </div>
@@ -53,7 +53,8 @@ const StepOne = ({ setLanguage, setStep }) => {
     >
       <div
         style={{
-          marginBottom: '20pt',
+          marginBottom: '2vh',
+
           fontSize: '14pt',
           borderRadius: '10pt',
           border: `solid 2.5pt ${PRIMARY_COLOR}`,
@@ -108,9 +109,11 @@ const StepTwo = ({ language, setStep }) => {
     >
       <div
         style={{
-          marginBottom: '10pt',
-          maxWidth: '150pt',
-          fontSize: '14pt',
+          // depends on the width
+          maxWidth: '190pt',
+
+          marginBottom: '3vh',
+          fontSize: '12pt',
           borderRadius: '10pt',
           border: `solid 2.5pt ${PRIMARY_COLOR}`,
           backgroundColor: SECONDARY_COLOR,
@@ -124,11 +127,9 @@ const StepTwo = ({ language, setStep }) => {
         }}
       >
         <span>{yaml[language].praying}</span>
-        <br />
         <span style={{ fontWeight: 'bold' }}>
           {yaml[language].praying_charm}
         </span>
-        <br />
         <span>{yaml[language].praying_advise}</span>
         <Button btnText={yaml[language].next} onClick={() => setStep(3)} />
       </div>
@@ -150,15 +151,17 @@ const StepThree = ({ language, setStep }) => {
           backgroundColor: 'transparent',
           width: '200px',
           height: '200px',
-          marginBottom: '10pt',
+          marginBottom: '3vh',
           cursor: 'pointer',
         }}
         onClick={() => setStep(4)}
       />
       <div
         style={{
-          marginBottom: '20pt',
+          // depends on the device width
           maxWidth: '170pt',
+
+          marginBottom: '20pt',
           fontSize: '14pt',
           borderRadius: '10pt',
           border: `solid 2.5pt ${PRIMARY_COLOR}`,
@@ -199,7 +202,7 @@ const StepFour = ({ language, setStep }) => {
       />
       <Button
         btnText={yaml[language].open}
-        btnStyle={{ position: 'absolute', bottom: '60pt' }}
+        btnStyle={{ position: 'absolute', bottom: '11vh' }}
         onClick={() => setStep(5)}
       />
     </div>
@@ -233,7 +236,7 @@ const StepFive = ({ language, setStep }) => {
         style={{
           display: 'flex',
           position: 'absolute',
-          top: '35%',
+          top: '35vh',
           flexDirection: 'column',
           maxWidth: '150pt',
           textAlign: 'center',
@@ -245,7 +248,7 @@ const StepFive = ({ language, setStep }) => {
         <br />
         <span>{quoteList[selectedId].book}</span>
       </div>
-      <div style={{ display: 'flex', position: 'absolute', bottom: '60pt' }}>
+      <div style={{ display: 'flex', position: 'absolute', bottom: '13vh' }}>
         <button
           style={{
             padding: '5pt',
