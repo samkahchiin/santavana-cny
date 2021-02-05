@@ -185,10 +185,9 @@ const StepThree = ({ language, setStep }) => {
 const StepFour = ({ language, setStep }) => {
   return (
     <div
-      className="container"
+      className={classes.Blur}
       style={{
         ...containerStyle,
-        backgroundImage: `url('./background_2.png')`,
       }}
     >
       <img
@@ -222,10 +221,9 @@ const StepFive = ({ language, setStep }) => {
 
   return (
     <div
-      className="container"
+      className={classes.Blur}
       style={{
         ...containerStyle,
-        backgroundImage: `url('./background_2.png')`,
         justifyContent: 'flex-end',
       }}
     >

@@ -22,3 +22,26 @@
     max-height: 30vh;
   }
 }
+
+.Blur:before {
+  content: '';
+  background-image: url('/background_2.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: -1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  right: 0;
+
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
