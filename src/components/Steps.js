@@ -206,7 +206,7 @@ const StepFour = ({ language, setStep }) => {
           position: 'absolute',
           left: 0,
           right: 0,
-          margin: '0 auto',
+          margin: 'auto',
         }}
         className={[classes.Angpau]}
         onClick={() => setStep(5)}
@@ -218,6 +218,8 @@ const StepFour = ({ language, setStep }) => {
 const StepFive = ({ language, setStep }) => {
   const quoteList = quotes[language]
   const selectedId = Math.floor(Math.random() * 22) + 1
+
+  console.log('selectedId', selectedId)
 
   return (
     <div
