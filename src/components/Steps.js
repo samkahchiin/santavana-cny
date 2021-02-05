@@ -188,7 +188,6 @@ const StepFour = ({ language, setStep }) => {
       style={{
         ...containerStyle,
         backgroundImage: `url('./background_2.png')`,
-        justifyContent: 'flex-end',
       }}
     >
       <img
@@ -202,7 +201,13 @@ const StepFour = ({ language, setStep }) => {
       />
       <Button
         btnText={yaml[language].open}
-        btnStyle={{ position: 'absolute', bottom: '11vh' }}
+        btnStyle={{
+          position: 'absolute',
+          bottom: '13vh',
+          left: 0,
+          right: 0,
+          margin: '0 auto',
+        }}
         onClick={() => setStep(5)}
       />
     </div>
