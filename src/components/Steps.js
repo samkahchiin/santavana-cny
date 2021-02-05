@@ -276,17 +276,19 @@ const StepFive = ({ language, setStep }) => {
 }
 
 const StepComponent = ({ step, setLanguage, setStep, language }) => {
+  const props = { language, setStep }
+
   switch (step) {
     case 1:
       return <StepOne setLanguage={setLanguage} setStep={setStep} />
     case 2:
-      return <StepTwo language={language} setStep={setStep} />
+      return <StepTwo {...props} />
     case 3:
-      return <StepThree language={language} setStep={setStep} />
+      return <StepThree {...props} />
     case 4:
-      return <StepFour language={language} setStep={setStep} />
+      return <StepFour {...props} />
     case 5:
-      return <StepFive language={language} setStep={setStep} />
+      return <StepFive {...props} />
     default:
       return <StepZero clickStart={() => setStep(1)} />
   }
