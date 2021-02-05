@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'ch';
+    overflow-y: hidden;
   }
 `
 
