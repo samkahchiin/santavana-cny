@@ -202,7 +202,7 @@ const StepFour = ({ language, setStep }) => {
       <Button
         btnText={yaml[language].open}
         btnStyle={{
-          position: 'relative',
+          position: 'absolute',
           maxWidth: '80pt',
           left: 0,
           right: 0,
