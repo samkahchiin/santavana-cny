@@ -204,6 +204,7 @@ const StepFour = ({ language, setStep }) => {
         btnText={yaml[language].open}
         btnStyle={{
           position: 'absolute',
+          maxWidth: '80pt',
           left: 0,
           right: 0,
           margin: 'auto',
@@ -218,8 +219,6 @@ const StepFour = ({ language, setStep }) => {
 const StepFive = ({ language, setStep }) => {
   const quoteList = quotes[language]
   const selectedId = Math.floor(Math.random() * 22) + 1
-
-  console.log('selectedId', selectedId)
 
   return (
     <div
@@ -250,10 +249,15 @@ const StepFive = ({ language, setStep }) => {
           textAlign: 'center',
         }}
       >
-        <span style={{ fontWeight: 'bold' }}>{quoteList[selectedId].text}</span>
-        <br />
-        <span>{quoteList[selectedId].ref_1}</span>
-        <span>{quoteList[selectedId].ref_2}</span>
+        <div style={{ maxHeight: '50%', overflowY: 'scroll' }}>
+          <span style={{ fontWeight: 'bold' }}>
+            {quoteList[selectedId].text}
+          </span>
+          <br />
+          <br />
+          <span>{quoteList[selectedId].ref_1}</span>
+          <span>{quoteList[selectedId].ref_2}</span>
+        </div>
         <div style={{ marginTop: '5vh' }}>
           <button
             style={{
