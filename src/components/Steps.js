@@ -251,29 +251,29 @@ const StepFive = ({ language, setStep }) => {
         <br />
         <span>{quoteList[selectedId].ref_1}</span>
         <span>{quoteList[selectedId].ref_2}</span>
-      </div>
-      <div style={{ display: 'flex', position: 'absolute', bottom: '13vh' }}>
-        <button
-          style={{
-            padding: '5pt',
-            fontSize: '14pt',
-            borderRadius: '15pt',
-            cursor: 'pointer',
-            border: `solid 1.5pt ${SECONDARY_COLOR}`,
-            backgroundColor: PRIMARY_COLOR,
-          }}
-        >
-          <a
-            href="https://santavana.org/"
+        <div style={{ marginTop: '5vh' }}>
+          <button
             style={{
-              textDecoration: 'none',
-              color: SECONDARY_COLOR,
+              padding: '5pt',
+              fontSize: '14pt',
+              borderRadius: '15pt',
+              cursor: 'pointer',
+              border: `solid 1.5pt ${SECONDARY_COLOR}`,
+              backgroundColor: PRIMARY_COLOR,
             }}
           >
-            {yaml[language].homepage}
-          </a>
-        </button>
-        <Button btnText={yaml[language].replay} onClick={() => setStep(3)} />
+            <a
+              href="https://santavana.org/"
+              style={{
+                textDecoration: 'none',
+                color: SECONDARY_COLOR,
+              }}
+            >
+              {yaml[language].homepage}
+            </a>
+          </button>
+          <Button btnText={yaml[language].replay} onClick={() => setStep(3)} />
+        </div>
       </div>
     </div>
   )
