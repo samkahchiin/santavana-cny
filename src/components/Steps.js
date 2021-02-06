@@ -27,7 +27,7 @@ const StepZero = ({ clickStart }) => (
   >
     <img className={classes.Title} src="/title.png" />
     <Button
-      btnText="开始 Start"
+      btnText="開始 Start"
       onClick={clickStart}
       btnStyle={{ marginBottom: '2vh' }}
     />
