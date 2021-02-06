@@ -116,23 +116,6 @@
   justify-content: flex-start;
 }
 
-.Background:before {
-  content: '';
-  background-image: url('/background.png');
-
-  position: fixed;
-  display: block;
-
-  z-index: -1;
-  height: -webkit-fill-available;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 0;
-  right: 0;
-}
-
 .BackgroundHigh:before {
   content: '';
   background-image: url('/background_1.png');
