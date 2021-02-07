@@ -4,6 +4,14 @@
   color: var(--text-color);
 }
 
+.LinkButton:hover a {
+  --border-color: #e0a91a;
+  --background-color: #fff6e0;
+  border: 'solid 1.5pt var(--border-color)';
+  background-color: var(--background-color);
+  color: #695237;
+}
+
 .Button {
   --background-color: #e0a91a;
   --border-color: #fff6e0;
