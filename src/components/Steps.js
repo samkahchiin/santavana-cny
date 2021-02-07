@@ -29,7 +29,7 @@ const StepZero = ({ clickStart }) => (
     <Button
       btnText="開始 Start"
       onClick={clickStart}
-      btnStyle={{ marginBottom: '2vh' }}
+      btnStyle={{ marginBottom: '4vh' }}
     />
   </div>
 )
