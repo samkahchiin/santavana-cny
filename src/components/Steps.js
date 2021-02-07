@@ -26,12 +26,13 @@ const StepZero = ({ clickStart }) => (
     }}
   >
     <img className={classes.Title} src="/title.png" />
-    <Button
-      btnText="開始 Start"
-      onClick={clickStart}
-      btnStyle={{ marginBottom: '4vh' }}
-    />
-  </div>
+      <Button
+        className={[classes.StartButton]}
+        btnText="開始 Start"
+        onClick={clickStart}
+      />
+      
+    </div>
 )
 
 const StepOne = ({ setLanguage, setStep }) => (

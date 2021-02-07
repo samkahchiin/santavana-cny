@@ -20,17 +20,61 @@
   overflow-y: scroll;
 }
 
-@media only screen and (min-width: 992px) {
+
+@media only screen and (max-height: 640px) {
   .Angpau {
-    bottom: 15vh;
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
   }
 
   .QuoteContent {
-    max-width: 20vw;
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 3vh;
+  }
+} 
+
+@media only screen and (min-height: 640px) {
+  .Angpau {
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 4vh;
+  }
+}
+@media only screen and (min-height: 812px) {
+  .Angpau {
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 8vh;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-height: 1024px) {
   .Angpau {
     bottom: 13vh;
   }
@@ -42,19 +86,9 @@
   .QuoteContent {
     max-width: 18vw;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .Angpau {
-    bottom: 3vh;
-  }
-
-  .Quote {
-    max-height: 30vh;
-  }
-
-  .QuoteContent {
-    max-width: 65vw;
+  .StartButton {
+    margin-bottom: 5vh;
   }
 }
 
