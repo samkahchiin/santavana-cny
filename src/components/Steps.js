@@ -26,13 +26,12 @@ const StepZero = ({ clickStart }) => (
     }}
   >
     <img className={classes.Title} src="/title.png" />
-      <Button
-        className={[classes.StartButton]}
-        btnText="開始 Start"
-        onClick={clickStart}
-      />
-      
-    </div>
+    <Button
+      className={[classes.StartButton]}
+      btnText="開始 Start"
+      onClick={clickStart}
+    />
+  </div>
 )
 
 const StepOne = ({ setLanguage, setStep }) => (
@@ -119,6 +118,7 @@ const StepFour = ({ language, setStep }) => {
     >
       <div className={classes.AngpauPacket}>
         <Button
+          btnStyle={{ marginBottom: '9vh' }}
           btnText={yaml[language].open}
           className={[classes.Angpau]}
           onClick={() => setStep(5)}
