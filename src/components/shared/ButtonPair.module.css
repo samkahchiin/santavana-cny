@@ -1,0 +1,8 @@
+.ButtonPair {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ButtonPair button {
+  flex-grow: 0.3;
+}

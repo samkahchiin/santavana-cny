@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'ch';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/ch-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ch';
+  font-weight: bold;
+  font-style: normal;
+  src: url(/fonts/ch-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'en';
+  font-weight: bold;
+  font-style: normal;
+  src: url(/fonts/en-bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'en';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/fonts/en-medium.otf) format('opentype');
+}

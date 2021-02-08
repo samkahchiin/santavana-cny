@@ -1,0 +1,245 @@
+.Title {
+  width: auto;
+  height: 23vh;
+  margin: 40px;
+}
+
+.Angpau {
+  /* position: absolute; */
+  max-width: 80pt;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+
+  position: fixed;
+}
+
+.Quote {
+  overflow-y: scroll;
+}
+
+@media only screen and (max-height: 640px) {
+  .Angpau {
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 3vh;
+  }
+}
+
+@media only screen and (min-height: 640px) {
+  .Angpau {
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 4vh;
+  }
+}
+@media only screen and (min-height: 812px) {
+  .Angpau {
+    bottom: 3vh;
+  }
+
+  .Quote {
+    max-height: 30vh;
+  }
+
+  .QuoteContent {
+    max-width: 65vw;
+  }
+
+  .StartButton {
+    margin-bottom: 8vh;
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .Angpau {
+    bottom: 13vh;
+  }
+
+  .Quote {
+    max-height: 35vh;
+  }
+
+  .QuoteContent {
+    max-width: 18vw;
+  }
+
+  .StartButton {
+    margin-bottom: 5vh;
+  }
+}
+
+.Blur:before {
+  content: '';
+  background-image: url('/background_2.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: -1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+  height: -webkit-fill-available;
+  left: 0;
+  right: 0;
+
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.Blur img {
+  width: auto;
+  height: 90vh;
+  margin: 20pt;
+  position: relative;
+}
+
+.AngpauPacket:before {
+  content: '';
+  background-image: url('/angpow.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: 1;
+  height: 90vh;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.AngpauPacket {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.BackgroundHigh:before {
+  content: '';
+  background-image: url('/background_1.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: -1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: -webkit-fill-available;
+  left: 0;
+  right: 0;
+}
+
+.Buddha:before {
+  content: '';
+  background-image: url('/buddha-static.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: 0;
+  height: 70vh;
+  width: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.BuddhaHigh:before {
+  content: '';
+  background-image: url('/buddha-high.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: 0;
+  height: 70vh;
+  width: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.BuddhaShine:before {
+  content: '';
+  background-image: url('/buddha-shine.png');
+
+  position: fixed;
+  display: block;
+
+  z-index: 0;
+  height: 70vh;
+  width: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TransparentBasketBox {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 3vh;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.QuoteContent {
+  display: flex;
+  position: absolute;
+  top: 35vh;
+  flex-direction: column;
+  text-align: center;
+  z-index: 100;
+}

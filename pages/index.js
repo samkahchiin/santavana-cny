@@ -1,21 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import Button from '../src/components/shared/Button'
+import Steps from '../src/components/Steps'
 
-const IndexPage = () => {
-  return (
-    <Container style={{backgroundImage: `url('./background.png')`}} />
-  )
-}
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-`
+const IndexPage = () => <Steps />
 
 export default IndexPage

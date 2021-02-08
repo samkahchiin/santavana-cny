@@ -1,0 +1,44 @@
+.Box {
+  --border-color: #e0a91a;
+  --background-color: #fff6e0;
+  --text-color: #695237;
+  border: solid 2.5pt var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 10pt;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5pt;
+  text-align: center;
+
+  z-index: 10;
+}
+
+.Box p {
+  --text-color: #695237;
+  color: var(--text-color);
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .Box {
+    max-width: 20vw;
+    margin-bottom: 2vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Box {
+    max-width: 20vw;
+    margin-bottom: 2vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Box {
+    max-width: 90vw;
+    margin-bottom: 1vh;
+  }
+}
