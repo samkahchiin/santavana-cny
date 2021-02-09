@@ -8,7 +8,7 @@ const IndexPage = () => {
        <>
         <Steps />
         <div>
-            <ReactAudioPlayer useRef='audio_tag' src="/cny_music.mp3" autoPlay/>
+            <ReactAudioPlayer src="/cny_music.mp3" controls autoPlay loop/>
         </div> 
     </>
     )
