@@ -178,9 +178,9 @@
 /* start button height for large devices */
 @media only screen and (min-height: 800px) {
   .StartButton {
-    margin-bottom: 7vh;
+    margin-bottom: 8vh;
   }
-  
+
   .Angpau {
     bottom: 7vh;
   }
