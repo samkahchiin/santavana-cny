@@ -18,13 +18,7 @@ const App = ({ Component, pageProps }) => {
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
-    position: relative;
     font-family: 'ch';
-  }
-
-  html, body {
-    overflow-x: hidden;
-    height: 100%;
   }
 `
 
