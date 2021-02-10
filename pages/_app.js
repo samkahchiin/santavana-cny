@@ -18,14 +18,13 @@ const App = ({ Component, pageProps }) => {
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
+    position: relative;
     font-family: 'ch';
   }
 
-  @media screen and (max-width: 480px) {
-      body {
-        max-height: 100vh;
-        overflow-y: hidden;
-      }
+  html, body {
+    overflow-x: hidden;
+    height: 100%;
   }
 `
 
