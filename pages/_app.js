@@ -20,13 +20,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-family: 'ch';
   }
-
-  @media screen and (max-width: 480px) {
-      body {
-        max-height: 100vh;
-        overflow-y: hidden;
-      }
-  }
 `
 
 export default App

@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../src/components/shared/Button'
 import Steps from '../src/components/Steps'
-import AudioPlayer from 'react-h5-audio-player';
+import ReactAudioPlayer from 'react-audio-player'
+import { FullScreen, useFullScreenHandle } from 'react-full-screen'
 
 const IndexPage = () => {
-    return (
-       <>
-        <Steps />
-        <AudioPlayer
-            autoPlay
-            src="cny_music.mp3"
-            onPlay={e => console.log("onPlay")}
-        />
-    </> 
-    )
+  const handle = useFullScreenHandle()
+
+  useEffect(() => {
+    handle.enter
+  }, [])
+
+  return (
+    <FullScreen handle={handle}>
+      <Steps />
+      <ReactAudioPlayer src="/cny_music.mp3" autoPlay loop />
+    </FullScreen>
+  )
 }
 
 export default IndexPage

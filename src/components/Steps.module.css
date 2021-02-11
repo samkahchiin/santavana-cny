@@ -108,27 +108,27 @@
   .Angpau {
     bottom: 3vh;
   }
-  
+
   .Quote {
     max-height: 30vh;
   }
 
   .QuoteContent {
     max-width: 64vw;
-}
+  }
 
-@media only screen and (max-height: 568px) {
-}
+  @media only screen and (max-height: 568px) {
+  }
   .StartButton {
     margin-bottom: 3vh;
   }
 }
 
-@media only screen and (min-width:321px) {
+@media only screen and (min-width: 321px) {
   .Angpau {
     bottom: 3vh;
   }
-  
+
   .Quote {
     max-height: 30vh;
   }
@@ -139,11 +139,11 @@
 }
 
 /* for tablets */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .Angpau {
     bottom: 3vh;
   }
-  
+
   .Quote {
     max-height: 30vh;
   }
@@ -154,11 +154,11 @@
 }
 
 /* for laptops and wide monitors */
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width: 1000px) {
   .Angpau {
     bottom: 3vh;
   }
-  
+
   .Quote {
     max-height: 30vh;
   }
@@ -173,7 +173,7 @@
   .StartButton {
     margin-bottom: 4vh;
   }
-} 
+}
 
 /* start button height for large devices */
 @media only screen and (min-height: 800px) {
@@ -184,7 +184,7 @@
   .Angpau {
     bottom: 7vh;
   }
-} 
+}
 
 .Blur:before {
   content: '';
@@ -198,8 +198,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 100%; */
-  height: -webkit-fill-available;
+  height: 100%;
   left: 0;
   right: 0;
 
@@ -256,7 +255,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: -webkit-fill-available;
+  height: 100%;
   left: 0;
   right: 0;
 }
