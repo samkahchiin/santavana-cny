@@ -116,14 +116,7 @@ const StepFour = ({ language, setStep }) => {
         ...containerStyle,
       }}
     >
-      <div className={classes.AngpauPacket}>
-        <Button
-          btnStyle={{ marginBottom: '9vh' }}
-          btnText={yaml[language].open}
-          className={[classes.Angpau]}
-          onClick={() => setStep(5)}
-        />
-      </div>
+      <div className={classes.AngpauPacket} onClick={() => setStep(5)} />
     </div>
   )
 }
