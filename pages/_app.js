@@ -11,6 +11,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Santavana | 寂静禅林</title>
         <link rel="stylesheet" href="fonts/fonts.css" />
         <meta name="description" content={description} />
