@@ -3,81 +3,81 @@ const quotes = {
     {
       id: 1,
       text:
-        '一個人的觀念可以影響很多的事情，所以佛法教我們要如理的思維，要懂得觀察緣起。',
+        '面對殘酷的疫情，人心與生活的動盪，我還是要把正法放在內心，要有法重於命的魄力。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 2,
       text:
-        '不必把事情看得太絕對，有什麼因緣就做什麼事，做到哪裡，那裡就是圓滿。',
+        '正法是如實的真理，是普遍與必然地存在。在正法真理的面前，我們只是五蘊、業力和煩惱的集合體。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 3,
       text:
-        '世間是相對的，若能心平靜氣的說明自己的立場與看法時，就不該用中傷別人、聽起來令人非常難受的語言來表達。',
+        '不管你學習什麼系統的佛法，都要養成一種特質，就是無我。佛法的無我，就是智慧與慈悲展現的關鍵。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 4,
       text:
-        '學佛法不是紙上談兵，不是口舌之辯，不是生存工具，佛法是讓我們安頓身心。',
+        '佛陀教導我們要自依止、法依止。透過聞思修的學習，無常無我的正見，樹立在自己的觀念當中。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 5,
       text:
-        '有意外（考驗），才能看清自心應對境界的堪忍力。一旦你的心接受了變化，你的整個身心自然能夠安頓下來。',
+        '一些教理的不同觀點，我們可以用各種角度來說明，當然最好的就是你明白修學的次第性。這些看似矛盾的理論，它在次第上是應該放到什麼階段來談。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 6,
-      text: '接受改變，其實就是無常無我的真實面貌。',
+      text: '慈悲是重在情感面，而人類又是情感為重的有情。正確的智慧，是可以用來引導世俗雜染的情感。──寂靜禪林方丈開仁長老開示錄 ',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 7,
       text:
-        '用善念祝福眾生遠離苦難，盡力化解人際之間的爭執與自私，讓人間早日恢復和平安寧！',
+        '從個人的私欲，擴展為對眾生平等的大愛。以智慧為基礎的情感，才能真正展現出佛陀無我的慈悲。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 8,
       text:
-        '做一個智者，還是做一個愚癡的人，自己是可以選擇的。\n我們是不是平常很容易自尋煩惱，然後又把這些煩惱，遷移給身邊的人呢？',
+        '假如我們有機會認識到自己脆弱最深刻的一面時，你就會相信佛法所講的，只要一天一天的讓信心增長，道心堅固，出離心、菩提心越來越增強的話，我想這多少幫助我們面對死亡的恐懼。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 9,
       text:
-        '學佛至今，自己是否還有解行不一的問題，如果有，試問自己有辦法改善嗎？',
+        '我們生不帶來什麼，死時也將什麼都帶不去，能跟隨我們的只是業力。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 10,
       text:
-        '省思佛法的特質，要自己去看到和體驗到，來確認自己所學的道理是沒有錯誤的。',
+        '你用真心、用生命體驗幾分，就有幾分的經驗和感悟，留在你的生命當中，別人取之不走，自己也用之不盡。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 11,
-      text: '一旦有了欲貪，就很難見到五蘊的過患。',
+      text: '假如我們知道佛法的智慧就是理性，那我們就不應該把世俗的情感帶到修學中，否則這一條解脫的道路會走得很辛苦。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
     {
       id: 12,
-      text: '祝願的品質與效果，端視本身所具備的淨戒與福業。',
+      text: '正法只有一個樣貌！他的長像會蘊含著慈悲、智慧、包容、忍耐、慚愧、淨信等，因為他的意念，充滿著佛法的道理，佛法的體驗。這一種特質所展現的，就是無我。',
       ref_1: '— 開仁長老開示錄 —',
       ref_2: '寂靜禪林方丈',
     },
@@ -155,79 +155,86 @@ const quotes = {
     {
       id: 1,
       text:
-        "A person's viewpoint can affect many things, hence Buddhism teaches us to think rationally and to observe dependent origination.",
-      ref_1: '— Thera Kairen —',
+        "In the face of the ruthless pandemic, when people’s lives and emotions are thrown into turmoil, I will nevertheless hold fast to the Right Dharma, endued with the courage to value Dharma above our mortal selves.",
+      ref_1: "— Thera Kairen's Words —",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 2,
       text:
-        "We don't have to take things too perfectly, just do the things according to the condition that we have. Successful arises when we act according to one's capability.",
-      ref_1: '— Thera Kairen —',
+        "Right Dharma is the truth as it actually is, the existence that is both universal and inevitable. According to the truth of the Right Dharma, we are simply the amalgamation of five aggregates, Karma and defilements.",
+      ref_1: "— Thera Kairen's Words —",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 3,
       text:
-        'The world is relative. If we can explain our position and opinions calmly, we shouldn’t use harsh and uncomfortable words to express them.',
-      ref_1: '- Thera Kairen -',
+        'No matter which Buddhist tradition one is following, one has to learn the habit of non-self. The Buddhist doctrine of non-self is the key to unfold wisdom, loving-kindness and compassion. ',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 4,
       text:
-        'Practicing the Dhamma is neither empty talk, nor absurd argument, it’s not a necessities for livelihood, but an essential that nourishing our mind and body.',
-      ref_1: '- Thera Kairen -',
+        'The Buddha exhorted us to be self-reliant and Dharma-reliant. The right view of impermanence and non-self is established in one through the process of hearing, reflection, and cultivation.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 5,
       text:
-        'Only when there is an ordeal can we see clearly our endurance in dealing with problems. Once the mind accepts the changes, our mind and body will settle down naturally.',
-      ref_1: '- Thera Kairen -',
+        'One can explain the different views in the teachings from various perspectives. Certainly, the best approach is to understand the sequence of the practice, and to be clear about where to place such seemingly contradictory theories in that sequence.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 6,
       text:
-        'Accepting changes is the authentic feature of impermanence and non-self.',
-      ref_1: '- Thera Kairen -',
+        'Loving-kindness and Compassion are mainly related to the affective aspect and human beings are highly emotional. The right wisdom can be deployed to guide the mundane defiled feelings and emotions.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 7,
       text:
-        'Wishing all beings be free from suffering with kindness, try our best to resolve interpersonal disputes and selfishness, let the world soon be recover and be peace!',
-      ref_1: '- Thera Kairen -',
+        'From individual desire to a greater love equally towards all beings, the selfless loving-kindness and compassion of the Buddha must be achieved through wisdom.',
+      ref_1: "- Thera Kairen's Words -",
+      ref_2: 'The Abbot of Santavana Forest Hermitage',
+    },
+    {
+      id: 8,
+      text:
+        'From individual desire to a greater love equally towards all beings, the selfless loving-kindness and compassion of the Buddha must be achieved through wisdom.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 9,
       text:
-        'It is our own choice to become a wise or a fool. Are we usually bring trouble on oneself easily, and relocate those problems to people around us?',
-      ref_1: '- Thera Kairen -',
+        'We are born empty-handed, and one day we will die in the same way. The only thing accompanies us is Karma. ',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
 
     {
       id: 10,
       text:
-        'Reflect on the nature of Buddha-Dhamma, we have to see and to experience by oneself, to affirm that there is no mistake in what we have learned.',
-      ref_1: '- Thera Kairen -',
+        'What you experience and how much realization you attain depend on how devoted and dedicated you are. What your life has gone through cannot be taken away by others and remains inexhaustible to yourself.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 11,
       text:
-        'Once there have the craving, it becomes very difficult to see the faults and distress of five aggregates.',
-      ref_1: '- Thera Kairen -',
+        'If we know the wisdom of Dharma is attained through rational understanding, we shall try our best not to let our habitual emotions get in the way of our practice, lest the path of liberation will be very difficult.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
       id: 12,
       text:
-        'The quality and effect of blessings depend on our purity in the precepts and meritorious behavior.',
-      ref_1: '- Thera Kairen -',
+        'There is only one Right Dharma. It manifests as a combination of loving-kindness, compassion, wisdom, magnanimity, forbearance, shame and fear of wrong, confidence and so on. Its essence embodies the teachings and practice of Buddha Dharma. It is marked by the characteristics of non-self.',
+      ref_1: "- Thera Kairen's Words -",
       ref_2: 'The Abbot of Santavana Forest Hermitage',
     },
     {
