@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Button from '../src/components/shared/Button'
 import Steps from '../src/components/Steps'
-import ReactAudioPlayer from 'react-audio-player'
 import { FullScreen, useFullScreenHandle } from 'react-full-screen'
 
 const IndexPage = () => {
   const handle = useFullScreenHandle()
+  const audioRef = useRef()
 
   useEffect(() => {
     handle.enter
@@ -14,8 +14,8 @@ const IndexPage = () => {
   return (
     <>
       <FullScreen handle={handle}>
-        <Steps />
-        <ReactAudioPlayer src="/cny_music.mp3" autoPlay loop />
+        <Steps audioRef={audioRef} />
+        <audio ref={audioRef} src="/cny_music.mp3" loop></audio>
       </FullScreen>
     </>
   )

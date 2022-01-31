@@ -177,9 +177,16 @@ const StepComponent = ({ step, setLanguage, setStep, language }) => {
   }
 }
 
-const Steps = () => {
+const Steps = ({ audioRef }) => {
   const [step, setStep] = useState(0)
   const [language, setLanguage] = useState('ch')
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (audio && step != 0) {
+      audio.play()
+    }
+  }, [step])
 
   return (
     <div className={classes.BackgroundHigh} style={{ fontFamily: language }}>
